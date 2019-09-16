@@ -21,11 +21,20 @@ class Articles extends Component {
     }
 
 
+
     componentDidMount() {
         this.props.dispatch(articleListAction());
     }
+
+
     render() {
         const { listStyle, articleList } = this.props
+        let unread = 0
+        for (let i = 0; i < articleList.length; i++) {
+            if (!articleList[i].isRead) {
+                unread++;
+            }
+        }
 
         return (
             <div className="article">
@@ -34,8 +43,8 @@ class Articles extends Component {
                     <ListStyle />
                 </div>
                 <div className="cards">
-                    <Card cardTitle="Number of articles" />
-                    <Card cardTitle="Unread Articles" cardType="unread" />
+                    <Card cardTitle="Number of articles" number={articleList.length} />
+                    <Card cardTitle="Unread Articles" cardType="unread" number={unread} />
                 </div>
                 <div className="day">
                     <h3>Today</h3>

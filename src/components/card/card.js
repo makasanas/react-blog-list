@@ -7,7 +7,7 @@ class Card extends Component {
     }
 
     render() {
-        const { cardTitle, cardType } = this.props;
+        const { cardTitle, cardType, number } = this.props;
         return (
             <div className={cardType == "unread" ? "card-content active" : "card-content"}>
                 <div className="card-heading">
@@ -28,7 +28,7 @@ class Card extends Component {
                     </div>
                 </div>
                 <div className="number">
-                    <p><span>23</span>This day</p>
+                    <p><span>{number}</span>This day</p>
                 </div>
 
             </div>
