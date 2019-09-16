@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hollywoodintel-react/precache-manifest.7f703674b04a3f9b1fee204ced08846d.js"
+  "/react-blog-list/precache-manifest.dec41fa46d7ecfb35caa9ffe7a2ddb3b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/hollywoodintel-react/index.html", {
+workbox.routing.registerNavigationRoute("/react-blog-list/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
