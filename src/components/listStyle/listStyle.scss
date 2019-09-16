@@ -1,0 +1,32 @@
+.list-style{
+    padding: 5px;
+    background: rgba(233,239,244,0.48);
+    border-radius: 4px;
+    display: flex;
+    .list-style-name{
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        cursor: pointer;
+        p{
+            font-family: 100;
+            font-size: 13px;
+            color: #989898;
+            margin-left: 10px;
+        }
+        &.active{
+            background: #ffffff;
+            svg{
+                g{
+                    g{
+                        fill: #007AFF;
+                    }
+                }
+            }
+            p{
+                color: #323C47;
+            }
+        }
+    }
+}
