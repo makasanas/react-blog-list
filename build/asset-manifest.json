@@ -1,15 +1,15 @@
 {
   "main.css": "/react-blog-list/static/css/main.9235ed82.chunk.css",
-  "main.js": "/react-blog-list/static/js/main.52a12f2c.chunk.js",
-  "main.js.map": "/react-blog-list/static/js/main.52a12f2c.chunk.js.map",
+  "main.js": "/react-blog-list/static/js/main.f4175dc4.chunk.js",
+  "main.js.map": "/react-blog-list/static/js/main.f4175dc4.chunk.js.map",
   "static/js/1.353e2038.chunk.js": "/react-blog-list/static/js/1.353e2038.chunk.js",
   "static/js/1.353e2038.chunk.js.map": "/react-blog-list/static/js/1.353e2038.chunk.js.map",
   "runtime~main.js": "/react-blog-list/static/js/runtime~main.f4c9bb71.js",
   "runtime~main.js.map": "/react-blog-list/static/js/runtime~main.f4c9bb71.js.map",
   "static/media/avatar.png": "/react-blog-list/static/media/avatar.c8d298a1.png",
-  "static/media/index.scss": "/react-blog-list/static/media/Roboto-Light.7b5fb88f.ttf",
+  "static/media/index.scss": "/react-blog-list/static/media/Roboto-Regular.ac3f799d.ttf",
   "static/css/main.9235ed82.chunk.css.map": "/react-blog-list/static/css/main.9235ed82.chunk.css.map",
   "index.html": "/react-blog-list/index.html",
-  "precache-manifest.3d2d8ace4f7c0a66668613d6e63d1519.js": "/react-blog-list/precache-manifest.3d2d8ace4f7c0a66668613d6e63d1519.js",
+  "precache-manifest.34bba035f8d4f661f302cd06b2d818cf.js": "/react-blog-list/precache-manifest.34bba035f8d4f661f302cd06b2d818cf.js",
   "service-worker.js": "/react-blog-list/service-worker.js"
 }
