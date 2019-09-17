@@ -10,7 +10,7 @@ export function articleListAction() {
                 dispatch({ type: "ARTICLE_LIST_FULFILLED", payload: response.data })
             })
             .catch((err) => {
-                dispatch({ type: "ARTICLE_LIST_REJECTED", payload: err.response.data })
+                dispatch({ type: "ARTICLE_LIST_REJECTED", payload: err.response })
             })
     }
 }
