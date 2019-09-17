@@ -47,7 +47,7 @@ class SideBar extends Component {
                 </div>
                 <ul className="menuList">
                     <li onClick={() => this.menuOpen('articles')} className={menu.articles ? 'active' : ''}>
-                        <Link to={homeUrl + "/articles"}>
+                        <Link to={homeUrl}>
                             <svg width="23px" height="18px" viewBox="0 0 23 18" version="1.1" >
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Content-Management-2" transform="translate(-38.000000, -185.000000)" fill="#007AFF">

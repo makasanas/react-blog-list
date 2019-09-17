@@ -14,7 +14,7 @@ class Routes extends Component {
                 <SideBar />
                 <div className="dashboard-content">
                     <Header />
-                    <Route exact path={homeUrl + "/articles"} component={Articles} />
+                    <Route exact path={homeUrl + "/"} component={Articles} />
                 </div>
             </div>
         );

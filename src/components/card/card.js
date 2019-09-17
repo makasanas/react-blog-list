@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
 import './card.scss';
+import { withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import { readAllAction } from '../../actions/readAllAction'
 
 class Card extends Component {
     constructor(props) {
         super(props)
+        this.markAsRead = this.markAsRead.bind(this)
+    }
+
+    markAsRead() {
+        // let id
+        // let data = this.props.articleList;
+        // for (let i = 0; i < data.length; i++) {
+        //     if (data[i].isRead == false) {
+        //         data[i].isRead = true;
+        //         id = data[i].id
+        //     }
+        //     this.props.dispatch(readAllAction(id, data));
+        // }
     }
 
     render() {
@@ -22,9 +38,9 @@ class Card extends Component {
                                 </g>
                             </g>
                         </svg>
-                        <div className="mark-popup">
+                        {cardType == "unread" ? <div className="mark-popup" onClick={() => this.markAsRead()} >
                             <p>Mark All as Read</p>
-                        </div>
+                        </div> : ' '}
                     </div>
                 </div>
                 <div className="number">
@@ -36,4 +52,10 @@ class Card extends Component {
     }
 }
 
-export default Card
+
+export default withRouter(connect((store) => {
+    return {
+        listStyle: store.listStyle.listStyle,
+        articleList: store.articleList.articleList,
+    };
+})(Card))

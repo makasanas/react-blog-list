@@ -20,8 +20,6 @@ class Articles extends Component {
         }
     }
 
-
-
     componentDidMount() {
         this.props.dispatch(articleListAction());
     }
